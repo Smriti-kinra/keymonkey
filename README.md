@@ -148,7 +148,6 @@ All models are evaluated on the held-out **test set** using:
 
 > The **skill score** is especially important: given that ~95% of all key-frame cells are silent, a trivial model that always predicts silence would achieve ~95% Hamming accuracy. Skill score measures the *gain above that floor*.
 
----
 
 ## How to Run
 
@@ -186,7 +185,7 @@ svm_model.pkl
 
 Open `KeyMonkey_grand_comparison.ipynb`. This loads all five checkpoints and produces unified evaluation tables and visualisations.
 
----
+
 
 ## Dependencies
 
@@ -216,7 +215,7 @@ pip install torch numpy pandas matplotlib pretty_midi lightgbm scikit-learn jobl
 
 In Colab, `pretty_midi` and `lightgbm` are installed inline at the top of the relevant notebooks.
 
----
+
 
 ##  Key Implementation Details
 
@@ -242,12 +241,11 @@ Classical piano performances have long silent passages. Roughly **95%** of all k
 - LightGBM: `is_unbalance=True`
 - SVM: `class_weight='balanced'` in `SGDClassifier`
 
----
 
 ## Author
 
 Built as part of the MLPR (Machine Learning and Pattern Recognition) Semester 4 project.
 By: Smriti Kinra, Khant Mota, Sameera John. 
 
----
+
 
