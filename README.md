@@ -84,7 +84,7 @@ MAESTRO v3 MIDIs
 
 ---
 
-## 🧠 Model Details
+## Model Details
 
 ### Recurrent Models (RNN, GRU, LSTM)
 
@@ -133,7 +133,7 @@ Output: (batch, 511, 88)   — next-frame predictions for every timestep
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 All models are evaluated on the held-out **test set** using:
 
@@ -150,19 +150,7 @@ All models are evaluated on the held-out **test set** using:
 
 ---
 
-## 🚀 How to Run
-
-### Prerequisites
-
-1. A Google account with Google Drive access
-2. The [MAESTRO v3.0.0](https://magenta.tensorflow.org/datasets/maestro) dataset downloaded and placed at:
-   ```
-   My Drive/Key Monkey/maestro-v3.0.0/
-   ```
-3. Create the checkpoint output folder:
-   ```
-   My Drive/Key Monkey/maestro_checkpoints/
-   ```
+## How to Run
 
 ### Step-by-Step
 
@@ -200,7 +188,7 @@ Open `KeyMonkey_grand_comparison.ipynb`. This loads all five checkpoints and pro
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 ```
 # Core
@@ -230,7 +218,7 @@ In Colab, `pretty_midi` and `lightgbm` are installed inline at the top of the re
 
 ---
 
-## 🔑 Key Implementation Details
+##  Key Implementation Details
 
 ### Why TBPTT?
 
@@ -256,14 +244,10 @@ Classical piano performances have long silent passages. Roughly **95%** of all k
 
 ---
 
-## 👤 Author
+## Author
 
 Built as part of the MLPR (Machine Learning and Pattern Recognition) Semester 4 project.
+By: Smriti Kinra, Khant Mota, Sameera John. 
 
 ---
 
-## 📄 License
-
-This project is released under the MIT License. See [LICENSE](LICENSE) for details.
-
-The MAESTRO dataset is subject to its own [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
