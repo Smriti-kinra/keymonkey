@@ -1,17 +1,5 @@
-# 🎹 KeyMonkey — Piano Note Prediction with ML
-
-> **Predicting the next piano key from music history using Recurrent Neural Networks and Classical ML**
-
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-orange)](https://pytorch.org)
-[![LightGBM](https://img.shields.io/badge/LightGBM-latest-green)](https://lightgbm.readthedocs.io)
-[![Dataset](https://img.shields.io/badge/Dataset-MAESTRO%20v3-purple)](https://magenta.tensorflow.org/datasets/maestro)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
-
----
-
-## 📖 Overview
-
+#  KeyMonkey: Piano Note Prediction with ML
+# Overview
 KeyMonkey is a multi-model machine learning project that learns to predict the next frame of piano notes given a history of previous frames. Given a sequence of piano roll frames (which keys are pressed at each moment in time), the model predicts what notes will be active in the **next** time slice.
 
 This is an **autoregressive, multi-label classification** problem — at each step the model must independently predict the state of all 88 piano keys simultaneously.
