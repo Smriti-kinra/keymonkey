@@ -16,11 +16,11 @@ This is an **autoregressive, multi-label classification** problem — at each st
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 keymonkey/
-├── KeyMonkey_dataset_preprocessing_final.ipynb   # Step 1: MIDI → Piano Roll cache
+├── KeyMonkey_dataset_preprocessing_final.ipynb   # Step 1: MIDI to Piano Roll cache
 ├── KeyMonkey_model_final.ipynb                   # Step 2: Train RNN / GRU / LSTM
 ├── KeyMonkey_rf_svm_final.ipynb                  # Step 3: Train LightGBM + SGD-SVM
 ├── KeyMonkey_grand_comparison.ipynb              # Step 4: Unified evaluation & plots
@@ -29,20 +29,20 @@ keymonkey/
 
 > **Note:** All notebooks are designed for **Google Colab** with the MAESTRO dataset stored in Google Drive.
 
----
 
-## 🗃️ Dataset — MAESTRO v3
+
+## Dataset — MAESTRO v3
 
 The project uses the [MAESTRO v3.0.0](https://magenta.tensorflow.org/datasets/maestro) (**MA**estro **E**lectric **S**tdio **T**raining **R**ecordings and **O**nline) dataset:
 
-- **~200 hours** of virtuoso piano performances
+- ~200 hours of virtuoso piano performances
 - Classical music recorded on a Yamaha Disklavier — acoustic piano with MIDI capture
 - ~1,200 MIDI files, each annotated with the original audio
 - Pre-split into train / validation / test at the **composition level** (same piece never appears in two splits)
 
-### Piano Roll Representation
+# Piano Roll Representation
 
-Each MIDI file is converted to a **binary piano roll matrix**:
+Each MIDI file is converted to a binary piano roll matrix:
 
 ```
 Shape: (T_frames, 88)
@@ -58,7 +58,7 @@ The MAESTRO CSV split is used as-is — no re-splitting. This is critical: it en
 
 ---
 
-## 🔄 Pipeline
+## Pipeline
 
 ```
 MAESTRO v3 MIDIs
