@@ -2,7 +2,7 @@
 # Overview
 KeyMonkey is a multi-model machine learning project that learns to predict the next frame of piano notes given a history of previous frames. Given a sequence of piano roll frames (which keys are pressed at each moment in time), the model predicts what notes will be active in the **next** time slice.
 
-This is an **autoregressive, multi-label classification** problem — at each step the model must independently predict the state of all 88 piano keys simultaneously.
+This is an **autoregressive, multi-label classification** problem  at each step the model must independently predict the state of all 88 piano keys simultaneously.
 
 **Five models are trained and compared:**
 
