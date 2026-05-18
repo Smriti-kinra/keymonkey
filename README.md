@@ -153,14 +153,14 @@ All models are evaluated on the held-out **test set** using:
 
 ### Step-by-Step
 
-**Step 1 — Preprocessing** (run once)
+**Step 1 - Preprocessing** (run once)
 
 Open `KeyMonkey_dataset_preprocessing_final.ipynb` in Google Colab and run all cells. This will:
 - Convert all ~1,200 MIDI files to `.npz` piano roll caches
 - Write `train_index.txt`, `validation_index.txt`, `test_index.txt`
 - Compute `pos_weight` for loss balancing
 
-**Step 2 — Train RNN / GRU / LSTM**
+**Step 2 - Train RNN / GRU / LSTM**
 
 Open `KeyMonkey_model_final.ipynb` and run all cells. Training resumes automatically from the latest checkpoint if interrupted.
 
@@ -171,7 +171,7 @@ best_GRU.pt
 best_LSTM.pt
 ```
 
-**Step 3 — Train LightGBM + SVM**
+**Step 3 - Train LightGBM + SVM**
 
 Open `KeyMonkey_rf_svm_final.ipynb` and run all cells.
 
@@ -181,7 +181,7 @@ lgbm_estimators.pkl
 svm_model.pkl
 ```
 
-**Step 4 — Grand Comparison**
+**Step 4 - Grand Comparison**
 
 Open `KeyMonkey_grand_comparison.ipynb`. This loads all five checkpoints and produces unified evaluation tables and visualisations.
 
